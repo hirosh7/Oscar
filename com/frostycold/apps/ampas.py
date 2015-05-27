@@ -4,6 +4,13 @@ import unicodedata
 
 def build_actor_list(data_files):
 
+    """
+    Build a list of dictionary entries for each actor/actress parsed from data files
+    Dictionary entries are formatted as {year: award year, actor: actor name, movie: movie name}
+    :param data_files: html data files containing Academy Award actor/actress award winners
+    :return: list of actor/actress dictionary entries (List)
+    """
+
     empty_dict = {}
     actor_entry = {}
     actor_list = []
